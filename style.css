@@ -271,4 +271,121 @@ footer {
 
 .download-btn:hover {
     opacity: 0.9;
+}/* =====================================
+   PROFESSIONAL ONE-PAGE PDF
+   ===================================== */
+
+@media print {
+
+    @page {
+        size: A4 portrait;
+        margin: 8mm;
+    }
+
+    html,
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 390px;
+        margin: 0 auto;
+        padding: 18px 18px;
+        border-radius: 0;
+        box-shadow: none;
+        background: white;
+    }
+
+    /* Profile */
+    .profile-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin: 8px 0 3px;
+    }
+
+    h2 {
+        font-size: 15px;
+        margin: 3px 0;
+    }
+
+    .profile > p {
+        font-size: 13px;
+        margin: 6px 0;
+    }
+
+    /* About */
+    .about {
+        margin-top: 12px;
+        padding: 10px;
+    }
+
+    .about h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .about p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    /* Skills */
+    .skills {
+        margin-top: 12px;
+    }
+
+    .skills h3 {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+
+    .skill {
+        margin: 5px 0;
+        padding: 7px;
+        font-size: 12px;
+    }
+
+    /* Social buttons */
+    .buttons {
+        margin-top: 12px;
+    }
+
+    .btn {
+        margin: 6px 0;
+        padding: 9px;
+        font-size: 12px;
+    }
+
+    /* Hide interactive buttons from PDF */
+    .share-btn,
+    .download-btn {
+        display: none !important;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 12px;
+        font-size: 11px;
+    }
+
+    /* Prevent page splitting */
+    .card,
+    .profile,
+    .skills,
+    .buttons,
+    .about {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
 }
