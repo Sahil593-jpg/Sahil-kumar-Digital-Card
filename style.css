@@ -217,3 +217,28 @@ footer {
 
     cursor: pointer;
 }
+.qr-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.qr-section h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.qr-section p {
+    margin-top: 0;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
