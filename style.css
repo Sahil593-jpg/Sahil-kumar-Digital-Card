@@ -241,4 +241,34 @@ footer {
     height: 200px;
     margin-top: 10px;
     border-radius: 10px;
+}.download-btn {
+    width: 100%;
+    margin-top: 12px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    opacity: 0.9;
+}.download-btn {
+    width: 100%;
+    margin-top: 12px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    opacity: 0.9;
 }
