@@ -1,22 +1,27 @@
 function showMessage() {
     alert("Hello Sahil! 👋 Welcome to my digital card.");
-}function shareProfile() {
+}
 
-    const message =
-        "Check out Sahil Kumar's Digital Card!";
+function shareProfile() {
+
+    const profileUrl =
+        "https://sahil593-jpg.github.io/Sahil-kumar-Digital-Card/";
+
+    const shareData = {
+        title: "Sahil Kumar - Digital Card",
+        text: "Check out Sahil Kumar's Digital Card! 🚀",
+        url: profileUrl
+    };
 
     if (navigator.share) {
 
-        navigator.share({
-            title: "Sahil Kumar - Digital Card",
-            text: message
-        });
+        navigator.share(shareData);
 
     } else {
 
-        navigator.clipboard.writeText(message);
+        navigator.clipboard.writeText(profileUrl);
 
-        alert("Profile message copied!");
+        alert("Profile link copied! 🔗");
 
     }
 }
