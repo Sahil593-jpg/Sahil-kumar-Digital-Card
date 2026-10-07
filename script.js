@@ -25,3 +25,6 @@ function shareProfile() {
 
     }
 }
+function downloadCard() {
+    window.print();
+}
